@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Verse | A Voz e a Essência do Rap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="imagens/logo-oficia.jpg" alt="Logo Street Verse" class="logo-nav">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobre">O Projeto</a></li>
+          <li><a href="#oquearap">O Que é o Rap</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#forca">A Força</a></li>
+          <li><a href="#estilos">Estilos</a></li>
+          <li><a href="#artistas">Artistas</a></li>
+          <li><a href="#beatmaker">Beat Maker</a></li>
+          <li><a href="https://instagram.com/streetverse26" target="_blank" class="insta-nav-btn">📷 @streetverse26</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION COM LOGO CARD FLIP 3D -->
+  <section class="hero">
+    <div class="hero-spray-splash"></div>
+    
+    <!-- CARD INTERATIVO DE FLIP NA LOGO -->
+    <div class="logo-flip-container" onclick="this.classList.toggle('flipped')">
+      <div class="logo-flip-card">
+        <!-- FRENTE DO CARD: LOGO -->
+        <div class="logo-card-front">
+          <img src="imagens/logo-oficia.jpg" alt="Logo Oficial Street Verse" class="hero-logo-large">
+          <span class="flip-hint">💡 Clique na logo para ver a explicação</span>
+        </div>
+        
+        <!-- VERSO DO CARD: MAPA MENTAL -->
+        <div class="logo-card-back">
+          <h3 class="graffiti-title" style="color: var(--accent-red-bright); font-size: 1.3rem; margin-bottom: 10px;">Mapeamento da Logo</h3>
+          <div class="mindmap-grid">
+            <div class="mindmap-node">
+              <span class="node-icon">🏙️</span>
+              <div>
+                <strong>STREET VERSE</strong>
+                <p>Nossa essência nasce diretamente da cultura de rua e da vivência urbana.</p>
+              </div>
+            </div>
+            <div class="mindmap-node">
+              <span class="node-icon">🎨</span>
+              <div>
+                <strong>TIPOGRAFIA</strong>
+                <p>O estilo estético lembra o grafismo e a arte do grafite espalhada nos muros.</p>
+              </div>
+            </div>
+            <div class="mindmap-node">
+              <span class="node-icon">🎤</span>
+              <div>
+                <strong>MICROFONE</strong>
+                <p>Simboliza a voz ativa, o poder da rima e a expressão autêntica do artista.</p>
+              </div>
+            </div>
+          </div>
+          <span class="flip-back-hint">🔄 Clique para virar de volta</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="hero-subtitle">Mais do que um gênero musical</p>
+    <div class="street-divider"><span>• STREET ART & CULTURE •</span></div>
+  </section>
+
+  <div class="container">
+
+    <!-- 01. SOBRE O PROJETO E OBJETIVO -->
+    <section id="sobre">
+      <span class="section-tag">01 / APRESENTAÇÃO</span>
+      <h2 class="section-title graffiti-title">SOBRE A <span>STREET VERSE</span></h2>
+      <div class="about-box">
+        <div class="about-text">
+          <p class="about-lead">
+            A <span class="brand-highlight">Street Verse</span> é um projeto que nasce da vontade de mostrar a força do rap e tudo aquilo que ele representa dentro da cultura.
+          </p>
+          
+          <p>
+            Nossa proposta é trazer para perto as letras significativas, as histórias, as características marcantes e a identidade que fazem do rap muito mais do que apenas um gênero musical.
+          </p>
+
+          <!-- ADIÇÃO DO PÚBLICO-ALVO SOLICITADA -->
+          <p>
+            Nosso público são os jovens que escutam rap, admiram e entendem o rap e aqueles que estão começando a descobrir sobre o estilo.
+          </p>
+          
+          <div class="highlight-quote">
+            Também queremos falar sobre o preconceito que ainda existe em torno dessa cultura. Muitas vezes, o rap é associado de forma injusta à periferia, à marginalização ou à falta de contexto.
+          </div>
+
+          <p class="verse-intro-text">Por trás de cada verso existe:</p>
+          
+          <div class="pillars-container">
+            <button class="pillar-btn" onclick="openPillarModal('vivencias')">VIVÊNCIAS</button>
+            <button class="pillar-btn" onclick="openPillarModal('criticas')">CRÍTICAS</button>
+            <button class="pillar-btn" onclick="openPillarModal('resistencia')">RESISTÊNCIA</button>
+            <button class="pillar-btn" onclick="openPillarModal('criatividade')">CRIATIVIDADE</button>
+            <button class="pillar-btn" onclick="openPillarModal('expressao')">EXPRESSÃO</button>
+          </div>
+
+          <p class="about-conclusion">
+            Clique em cada pilar acima para entender a essência que move cada rima.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. O QUE É O RAP -->
+    <section id="oquearap">
+      <span class="section-tag">02 / CONCEITO</span>
+      <h2 class="section-title graffiti-title">O QUE É O <span>RAP?</span></h2>
+      <div class="whatis-card" onclick="openWhatIsModal()">
+        <h3>O Ritmo e a Poesia das Ruas</h3>
+        <p>Clica aqui para ver a explicação completa de como o Rap une ritmo, poesia falada e vivência social.</p>
+      </div>
+    </section>
+
+    <!-- 03. A HISTÓRIA DO RAP -->
+    <section id="historia">
+      <span class="section-tag">03 / EVOLUÇÃO</span>
+      <h2 class="section-title graffiti-title">A HISTÓRIA DO <span>RAP.</span></h2>
+      <p style="margin-bottom: 25px; color: var(--text-muted);">Clica em cada quadradinho abaixo para ver os detalhes da evolução histórica do Rap.</p>
+
+      <div class="journey-grid">
+        <div class="journey-box" onclick="openJourneyModal('70s')">
+          <div class="journey-year">ANOS 70</div>
+          <h3>O Nascimento no Bronx</h3>
+          <p>As block parties de Nova York e o isolamento dos breaks de funk pelos DJs.</p>
+        </div>
+
+        <div class="journey-box" onclick="openJourneyModal('80s')">
+          <div class="journey-year">ANOS 80</div>
+          <h3>Da Rua para o Mundo</h3>
+          <p>A expansão global e a chegada do Hip-Hop na Estação São Bento em São Paulo.</p>
+        </div>
+
+        <div class="journey-box" onclick="openJourneyModal('90s')">
+          <div class="journey-year">ANOS 90</div>
+          <h3>A Era de Ouro e Consciência</h3>
+          <p>O auge da poesia consciente, denúncia social e clássicos imortais no Brasil e EUA.</p>
+        </div>
+
+        <div class="journey-box" onclick="openJourneyModal('modern')">
+          <div class="journey-year">ANOS 2000+</div>
+          <h3>Novas Vertentes e Era Digital</h3>
+          <p>A explosão do Trap, Drill, batalhas de rima em praças e alcance mundial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. A FORÇA DO RAP -->
+    <section id="forca">
+      <span class="section-tag">04 / EXPRESSÃO</span>
+      <h2 class="section-title graffiti-title">A FORÇA DO <span>RAP E DA RUA</span></h2>
+      <p style="margin-bottom: 25px; color: var(--text-muted);">O rap não existe sozinho. Ele é parte viva de uma cultura urbana rica que se expressa de várias maneiras:</p>
+
+      <div class="force-grid">
+        <!-- CARD RAPPERS & MCS -->
+        <div class="force-card force-card-clickable force-card-banner" onclick="openRapperModal()">
+          <div class="force-banner-img-wrapper">
+            <img src="imagens/rapper4.jpg" alt="Os Rappers & MCs" class="force-banner-thumb">
+          </div>
+          <h3>Os Rappers & MCs</h3>
+        </div>
+
+        <!-- CARD GRAFITE -->
+        <div class="force-card force-card-clickable force-card-banner" onclick="openGrafitiModal()">
+          <div class="force-banner-img-wrapper">
+            <img src="imagens/grafiti1.jpeg" alt="Grafiti" class="force-banner-thumb">
+          </div>
+          <h3>Grafiti</h3>
+        </div>
+
+        <!-- CARD DJS -->
+        <div class="force-card force-card-clickable force-card-banner" onclick="openDjModal()">
+          <div class="force-banner-img-wrapper">
+            <img src="imagens/djs1.jpeg" alt="Os DJs & Beats" class="force-banner-thumb">
+          </div>
+          <h3>Os DJs & Beats</h3>
+        </div>
+
+        <!-- CARD BREAKDANCE -->
+        <div class="force-card force-card-clickable force-card-banner" onclick="openDanceModal()">
+          <div class="force-banner-img-wrapper">
+            <img src="imagens/dance1.jpeg" alt="Breakdance" class="force-banner-thumb">
+          </div>
+          <h3>Breakdance</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05. ESTILOS DIFERENTES DO RAP -->
+    <section id="estilos">
+      <span class="section-tag">05 / SUBGÊNEROS</span>
+      <h2 class="section-title graffiti-title">ESTILOS E <span>BATIDAS DIFERENTES.</span></h2>
+      <p style="margin-bottom: 25px; color: var(--text-muted);">O rap possui diferentes vertentes sonoras, provando que existem infinitas formas de se expressar. Clica para ler ou ouvir a batida!</p>
+
+      <div class="styles-grid">
+        <div class="style-card">
+          <span class="style-number">01</span>
+          <div>
+            <h3>BOOM BAP</h3>
+            <p>Batidas acústicas e marcantes de bumbo e caixa, foco absoluto na lírica afiada e samples clássicos de vinil.</p>
+          </div>
+          <div class="style-buttons-group">
+            <button class="btn-details" onclick="openStyleModal('boombap')">DETALHES</button>
+            <button class="btn-audio" onclick="playStyleBeat('boombap')">🔊 Ouvir Batida</button>
+          </div>
+        </div>
+
+        <div class="style-card featured">
+          <span class="style-number">02</span>
+          <div>
+            <h3>TRAP</h3>
+            <p>Hi-hats acelerados, graves profundos em 808 e melodias modernas focadas em vivências e ostentação.</p>
+          </div>
+          <div class="style-buttons-group">
+            <button class="btn-details" onclick="openStyleModal('trap')">DETALHES</button>
+            <button class="btn-audio" onclick="playStyleBeat('trap')">🔊 Ouvir Batida</button>
+          </div>
+        </div>
+
+        <div class="style-card">
+          <span class="style-number">03</span>
+          <div>
+            <h3>DRILL</h3>
+            <p>Ritmos tensos, graves deslizantes e relatos diretos sobre a realidade implacável das ruas.</p>
+          </div>
+          <div class="style-buttons-group">
+            <button class="btn-details" onclick="openStyleModal('drill')">DETALHES</button>
+            <button class="btn-audio" onclick="playStyleBeat('drill')">🔊 Ouvir Batida</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. ARTISTAS -->
+    <section id="artistas">
+      <span class="section-tag">06 / LENDAS</span>
+      <h2 class="section-title graffiti-title">ARTISTAS E AS <span>DIFICULDADES DA VIDA</span></h2>
+      <p style="margin-bottom: 25px; color: var(--text-muted);">Clica no cartão de cada artista para conhecer as suas músicas marcantes que retratam as dificuldades vividas e seus significados profundos.</p>
+      
+      <div class="artists-grid">
+        <div class="artist-card" onclick="openModal('racionais')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/racionais.jpg" alt="Racionais MC's" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">Brasil • Consciente</span>
+            <h3 class="artist-name">Racionais MC's</h3>
+            <p class="artist-preview">Retrato cru da violência, racismo estrutural e sobrevivência nas prisões e periferias.</p>
+          </div>
+        </div>
+
+        <div class="artist-card" onclick="openModal('sabotage')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/sabotage.jpg" alt="Sabotage" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">Brasil • Maestro do Canão</span>
+            <h3 class="artist-name">Sabotage</h3>
+            <p class="artist-preview">A superação da criminalidade, a fome e a busca por dignidade através da arte na favela.</p>
+          </div>
+        </div>
+
+        <div class="artist-card" onclick="openModal('tupac')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/2pac.jpg" alt="Tupac Shakur" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">EUA • Lenda Global</span>
+            <h3 class="artist-name">Tupac Shakur</h3>
+            <p class="artist-preview">A dor das mães solo na pobreza, o racismo sistémico e a violência policial nos guetos americanos.</p>
+          </div>
+        </div>
+
+        <div class="artist-card" onclick="openModal('nas')">
+          <div class="artist-img-wrapper">
+            <img src="imagens/nas.jpg" alt="Nas" class="artist-img">
+          </div>
+          <div class="artist-info">
+            <span class="artist-tag">EUA • Golden Era</span>
+            <h3 class="artist-name">Nas</h3>
+            <p class="artist-preview">O crescimento em complexos habitacionais e a perda precoce de amigos para a criminalidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. BEAT MAKER INTERATIVO -->
+    <section id="beatmaker">
+      <span class="section-tag">07 / ESTÚDIO</span>
+      <h2 class="section-title graffiti-title">STREET BEATS • <span>ESTÚDIO INTERATIVO</span></h2>
+      <p style="margin-bottom: 20px; color: var(--text-muted);">Cria os teus ritmos! Clica nos pads abaixo ou usa as teclas do teclado (Q, W, E, A, S, D) para tocar.</p>
+      
+      <div class="beat-studio">
+        <div class="studio-controls">
+          <div>
+            <button class="btn-action" id="playSeqBtn">▶ Iniciar Sequenciador</button>
+            <button class="btn-action" id="clearSeqBtn" style="background:#444;">Limpar</button>
+          </div>
+          <div class="bpm-control">
+            <label for="bpmRange"><strong>BPM: <span id="bpmVal">90</span></strong></label>
+            <input type="range" id="bpmRange" min="70" max="140" value="90">
+          </div>
+        </div>
+
+        <!-- PADS DE BATERIA -->
+        <div class="pads-grid">
+          <div class="pad-btn" data-sound="kick" data-key="Q">
+            <span>BUMBO (Kick)</span>
+            <span class="pad-key">Tecla Q</span>
+          </div>
+          <div class="pad-btn" data-sound="snare" data-key="W">
+            <span>CAIXA (Snare)</span>
+            <span class="pad-key">Tecla W</span>
+          </div>
+          <div class="pad-btn" data-sound="hihat" data-key="E">
+            <span>CHIMBAL (Hi-Hat)</span>
+            <span class="pad-key">Tecla E</span>
+          </div>
+          <div class="pad-btn" data-sound="clap" data-key="A">
+            <span>PALMA (Clap)</span>
+            <span class="pad-key">Tecla A</span>
+          </div>
+          <div class="pad-btn" data-sound="bass" data-key="S">
+            <span>GRAVE (808)</span>
+            <span class="pad-key">Tecla S</span>
+          </div>
+          <div class="pad-btn" data-sound="perc" data-key="D">
+            <span>RIMSHOT</span>
+            <span class="pad-key">Tecla D</span>
+          </div>
+        </div>
+
+        <!-- SEQUENCIADOR -->
+        <h4 style="margin-bottom: 12px; text-transform: uppercase; color: var(--text-muted); font-size: 0.85rem;">Sequenciador de Ritmo (8 Passos)</h4>
+        <div class="sequencer-wrapper">
+          <div class="sequencer" id="sequencerGrid">
+            <!-- Gerado via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- MODAIS -->
+  <div class="modal" id="rapperModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('rapperModal')">&times;</span>
+      <div class="modal-section">
+        <h3 class="graffiti-title" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;">Os Rappers & MCs</h3>
+        <p style="margin-bottom: 15px;">A voz que relata as dores, vitórias e críticas sociais através de versos rimados com precisão. O MC é o porta-voz das ruas.</p>
+        <div class="grafiti-gallery">
+          <div class="grafiti-gallery-item"><img src="imagens/rapper1.jpg" alt="Rapper 1" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/rapper2.jpg" alt="Rapper 2" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/rapper3.jpg" alt="Rapper 3" class="grafiti-gallery-img"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="grafitiModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('grafitiModal')">&times;</span>
+      <div class="modal-section">
+        <h3 class="graffiti-title" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;">O Grafiti</h3>
+        <p style="margin-bottom: 15px;">A arte visual nos muros das cidades, dando cor, identidade e voz às vivências da periferia.</p>
+        <div class="grafiti-gallery">
+          <div class="grafiti-gallery-item"><img src="imagens/grafiti2.jpeg" alt="Grafiti 1" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/grafiti4.jpeg" alt="Grafiti 2" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/grafiti3.jpeg" alt="Grafiti 3" class="grafiti-gallery-img"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="djModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('djModal')">&times;</span>
+      <div class="modal-section">
+        <h3 class="graffiti-title" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;">Os DJs & Beats</h3>
+        <p style="margin-bottom: 15px;">A batida e o corte de vinil que estruturam o ritmo magnético que embala a dança e o verso.</p>
+        <div class="grafiti-gallery">
+          <div class="grafiti-gallery-item"><img src="imagens/djs1.jpeg" alt="DJ 1" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/djs2.jpeg" alt="DJ 2" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/djs3.jpeg" alt="DJ 3" class="grafiti-gallery-img"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="danceModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('danceModal')">&times;</span>
+      <div class="modal-section">
+        <h3 class="graffiti-title" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;">Breakdance</h3>
+        <p style="margin-bottom: 15px;">O movimento corporal e acrobático que traduz a energia e resistência urbana em ritmo puro.</p>
+        <div class="grafiti-gallery">
+          <div class="grafiti-gallery-item"><img src="imagens/dance2.jpeg" alt="Dance 1" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/dance3.jpeg" alt="Dance 2" class="grafiti-gallery-img"></div>
+          <div class="grafiti-gallery-item"><img src="imagens/dance4.jpeg" alt="Dance 3" class="grafiti-gallery-img"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="pillarModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('pillarModal')">&times;</span>
+      <div class="modal-section">
+        <h3 id="pModalTitle" class="graffiti-title" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;"></h3>
+        <p id="pModalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="whatIsModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('whatIsModal')">&times;</span>
+      <div class="modal-section">
+        <h3 style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;">O Que É o Rap?</h3>
+        <p style="margin-bottom: 12px;">A sigla <strong>RAP</strong> significa <em>Rhythm and Poetry</em> (Ritmo e Poesia). Trata-se de uma forma de expressão vocal que combina rimas, fala ritmada e poesias contundentes.</p>
+        <p>Muito mais do que entretenimento, o rap é a voz dos marginalizados, um canal de denúncia contra as injustiças sociais.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="artistModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('artistModal')">&times;</span>
+      <div class="modal-header">
+        <div class="modal-avatar-square-container">
+          <img src="" id="modalImg" class="modal-avatar-square" alt="Artista">
+        </div>
+        <div class="modal-title-box">
+          <h3 id="modalName"></h3>
+          <p id="modalPhrase" class="modal-artist-phrase"></p>
+          <span class="artist-tag" id="modalTag"></span>
+        </div>
+      </div>
+
+      <div class="modal-quote-box" id="modalQuote"></div>
+
+      <div class="modal-section">
+        <h4>O Que Representa na Cultura</h4>
+        <p id="modalRep"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>A Mensagem das Músicas</h4>
+        <p id="modalMsg"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Músicas Marcantes</h4>
+        <div id="modalSongsContainer" class="songs-grid-modal"></div>
+      </div>
+
+      <div class="modal-section">
+        <h4>História & Trajetória Completa</h4>
+        <p id="modalBio" class="modal-bio-extended"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="journeyModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('journeyModal')">&times;</span>
+      <div class="modal-section">
+        <h3 id="jModalTitle" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;"></h3>
+        <p id="jModalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="styleModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal('styleModal')">&times;</span>
+      <div class="modal-section">
+        <h3 id="sModalTitle" style="font-size: 1.5rem; color: var(--accent-red-bright); margin-bottom: 12px;"></h3>
+        <p id="sModalText" style="margin-bottom: 15px;"></p>
+        <button class="btn-action" id="modalPlayBeatBtn" style="width: 100%;">🔊 Ouvir Demonstração Deste Estilo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; Street Verse — Força, Cultura e Resistência do Rap.</p>
+    <a href="https://instagram.com/streetverse26" target="_blank" class="footer-insta">
+      📷 Siga no Instagram: @streetverse26
+    </a>
+  </footer>
+
+  <script>
+    const pillarsData = {
+      vivencias: { title: "VIVÊNCIAS", text: "O Rap é o espelho da vida real. Cada verso traz a bagagem de quem sente na pele o dia a dia das periferias, as vitórias e as superações cotidianas." },
+      criticas: { title: "CRÍTICA SOCIAL", text: "Ferramenta política de denúncia. Questiona a desigualdade, o preconceito racial e a violência institucional, exigindo justiça social." },
+      resistencia: { title: "RESISTÊNCIA", text: "O Rap se mantém vivo e forte contra as tentativas de silenciamento, provando que a voz da periferia não pode ser apagada." },
+      criatividade: { title: "CRIATIVIDADE", text: "A capacidade de transformar a escassez em poesia, ritmos e métricas geniais através de novas vertentes sonoras e samples." },
+      expressao: { title: "EXPRESSÃO URBANA", text: "A liberdade de ser quem você é. Une a voz, a dança (Breakdance), a arte nos muros (Graffiti) e as batidas (DJs)." }
+    };
+
+    function openPillarModal(key) {
+      const data = pillarsData[key];
+      if(!data) return;
+      document.getElementById('pModalTitle').innerText = data.title;
+      document.getElementById('pModalText').innerText = data.text;
+      document.getElementById('pillarModal').classList.add('active');
+    }
+
+    function openRapperModal() { document.getElementById('rapperModal').classList.add('active'); }
+    function openGrafitiModal() { document.getElementById('grafitiModal').classList.add('active'); }
+    function openDjModal() { document.getElementById('djModal').classList.add('active'); }
+    function openDanceModal() { document.getElementById('danceModal').classList.add('active'); }
+
+    const artistsData = {
+      racionais: {
+        name: "Racionais MC's",
+        phrase: "A voz crua e consciente das ruas e periferias do Brasil.",
+        tag: "Brasil • Rap Consciente",
+        img: "imagens/racionais.jpg",
+        quote: '"Os mano é tipo assim, se liga no meu procedim..."',
+        rep: "Representam o pilar máximo do rap consciente no Brasil, dando voz e orgulho à população das periferias.",
+        msg: "Denúncia social, combate ao racismo estrutural e sobrevivência nas quebradas.",
+        songs: [
+          { title: "Diário de um Detento", album: "Sobrevivendo no Inferno (1997)", img: "imagens/diario.jpg", significado: "Retrata a desumanidade do sistema carcerário brasileiro após o massacre do Carandiru.", youtube: "https://youtu.be/pK1viMNdYp0?si=HQN0gt-wA94YrlD5" },
+          { title: "Jesus Chorou", album: "Nada como um Dia (2002)", img: "imagens/jesus-chorou.jpg", significado: "Fala sobre a dor da perda, as armadilhas do crime e a busca por dignidade.", youtube: "https://youtu.be/jLfWZ0nhTAE?si=yskDlqP4nzQzyCY-" }
+        ],
+        bio: "Formado em São Paulo por Mano Brown, Ice Blue, Edi Rock e DJ KL Jay em 1988, transformaram o rap nacional em uma força política."
+      },
+      sabotage: {
+        name: "Sabotage",
+        phrase: "O maestro do Canão que eternizou a poesia da favela.",
+        tag: "Brasil • Maestro do Canão",
+        img: "imagens/sabotage.jpg",
+        quote: '"Rap é compromisso, não é viagem..."',
+        rep: "A síntese entre a vivência de favela e a versatilidade artística única.",
+        msg: "Superação, sabedoria de rua e resiliência através da arte.",
+        songs: [
+          { title: "Um Bom Lugar", album: "Rap é Compromisso (2001)", img: "imagens/um bom lugar.jpg", significado: "O sonho de encontrar paz e respeito na favela, transformando a pobreza em poesia autêntica.", youtube: "https://youtu.be/GA7LcSX8tYE?si=Ntx4inlj3lfKarht" }
+        ],
+        bio: "Mauro Mateus dos Santos nasceu no Canão (SP), conquistou as ruas e o cinema antes de sua precoce morte em 2003."
+      },
+      tupac: {
+        name: "Tupac Shakur (2Pac)",
+        phrase: "O poeta rebelde que deu voz aos oprimidos.",
+        tag: "EUA • Poeta & Ativista",
+        img: "imagens/2pac.jpg",
+        quote: '"Reality is wrong. Dreams are for real."',
+        rep: "Ícone global máximo do Hip-Hop e do ativismo social contra o racismo.",
+        msg: "Resistência contra o preconceito, a pobreza e a violência policial.",
+        songs: [
+          { title: "Dear Mama", album: "Me Against the World (1995)", img: "imagens/dear mama.jpg", significado: "Homenagem emocionante à luta de sua mãe em meio à pobreza extrema.", youtube: "https://youtu.be/Mb1ZvUDvLDY?si=EXbIdm-3cpbsEwm1" },
+          { title: "Changes", album: "Greatest Hits (1998)", img: "imagens/changes.jpg", significado: "Crítica contundente ao racismo sistêmico e à violência urbana.", youtube: "https://youtu.be/M8Wj6-gPY0g?si=jZigVtpxF1eywZLE" }
+        ],
+        bio: "Nascido no Harlem (NY) e criado sob a influência dos Panteras Negras, tornou-se um dos artistas mais influentes da história."
+      },
+      nas: {
+        name: "Nas",
+        phrase: "O mestre do storytelling nas crônicas urbanas.",
+        tag: "EUA • Golden Era",
+        img: "imagens/nas.jpg",
+        quote: '"Whose world is this? The world is yours."',
+        rep: "O topo do lirismo e da narrativa poética urbana.",
+        msg: "Críticas sociais afiadas e filosofia de rua nos complexos habitacionais.",
+        songs: [
+          { title: "One Love", album: "Illmatic (1994)", img: "imagens/one love.jpg", significado: "Carta a amigos presos, retratando a dura realidade da criminalidade juvenil.", youtube: "https://youtu.be/hxce_qvhi5I?si=jB8A4xfQCGxJrPtM" },
+          { title: "N.Y. State of Mind", album: "Illmatic (1994)", img: "imagens/state.jpg", significado: "Retrato cru da vida nos projetos de Queensbridge.", youtube: "https://youtu.be/hI8A14Qcv68?si=mX5-QUTPcb_IrATa" }
+        ],
+        bio: "Aos 20 anos lançou 'Illmatic', definindo o padrão técnico global de rimas e narrativa."
+      }
+    };
+
+    const journeyData = {
+      '70s': { title: "Anos 70: O Nascimento no Bronx", text: "Nas festas de rua no South Bronx, DJ Kool Herc isolou os breaks de funk, dando origem ao Rap." },
+      '80s': { title: "Anos 80: Da Rua para o Mundo", text: "Chegada do Hip-Hop à Estação São Bento em São Paulo e expansão global." },
+      '90s': { title: "Anos 90: A Era de Ouro e Consciência", text: "Auge da poesia consciente com Racionais MC's no Brasil e Tupac/Nas nos EUA." },
+      'modern': { title: "Anos 2000+: Era Digital e Vertentes", text: "Explosão do Trap, Drill e batalhas de rima em praças por todo o mundo." }
+    };
+
+    const stylesData = {
+      boombap: { title: "Boom Bap", text: "Estilo clássico centrado no som orgânico do bumbo ('Boom') e da caixa ('Bap'). Samples de vinil e rimas complexas." },
+      trap: { title: "Trap", text: "Hi-hats acelerados, graves profundos em 808 e melodias modernas focadas em vivências e ostentação." },
+      drill: { title: "Drill", text: "Ritmos tensos, graves deslizantes e relatos diretos sobre a realidade das ruas." }
+    };
+
+    function openWhatIsModal() { document.getElementById('whatIsModal').classList.add('active'); }
+
+    function openModal(id) {
+      const data = artistsData[id];
+      if(!data) return;
+      document.getElementById('modalImg').src = data.img;
+      document.getElementById('modalName').innerText = data.name;
+      document.getElementById('modalPhrase').innerText = data.phrase;
+      document.getElementById('modalTag').innerText = data.tag;
+      document.getElementById('modalQuote').innerText = data.quote;
+      document.getElementById('modalRep').innerText = data.rep;
+      document.getElementById('modalMsg').innerText = data.msg;
+      document.getElementById('modalBio').innerText = data.bio;
+
+      const songsContainer = document.getElementById('modalSongsContainer');
+      songsContainer.innerHTML = '';
+      data.songs.forEach(song => {
+        const songCard = document.createElement('div');
+        songCard.className = 'song-card-item';
+        songCard.innerHTML = `
+          <img src="${song.img}" alt="${song.title}" class="song-thumb">
+          <div class="song-info-content">
+            <h5 class="song-title">${song.title}</h5>
+            <p class="song-album"><strong>Álbum:</strong> ${song.album}</p>
+            <p class="song-meaning"><strong>Significado:</strong> ${song.significado}</p>
+            <a href="${song.youtube}" target="_blank" class="btn-youtube">▶ YouTube</a>
+          </div>
+        `;
+        songsContainer.appendChild(songCard);
+      });
+
+      document.getElementById('artistModal').classList.add('active');
+    }
+
+    function openJourneyModal(key) {
+      const data = journeyData[key];
+      if(!data) return;
+      document.getElementById('jModalTitle').innerText = data.title;
+      document.getElementById('jModalText').innerText = data.text;
+      document.getElementById('journeyModal').classList.add('active');
+    }
+
+    function openStyleModal(key) {
+      const data = stylesData[key];
+      if(!data) return;
+      document.getElementById('sModalTitle').innerText = data.title;
+      document.getElementById('sModalText').innerText = data.text;
+      document.getElementById('modalPlayBeatBtn').onclick = () => playStyleBeat(key);
+      document.getElementById('styleModal').classList.add('active');
+    }
+
+    function closeModal(modalId) { document.getElementById(modalId).classList.remove('active'); }
+
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playSound(type) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const now = audioCtx.currentTime;
+
+      if (type === 'kick') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.setValueAtTime(130, now);
+        osc.frequency.exponentialRampToValueAtTime(0.01, now + 0.4);
+        gain.gain.setValueAtTime(1, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+        osc.start(now);
+        osc.stop(now + 0.4);
+      } 
+      else if (type === 'snare') {
+        const noiseBuffer = audioCtx.createBuffer(1, audioCtx.sampleRate * 0.2, audioCtx.sampleRate);
+        const output = noiseBuffer.getChannelData(0);
+        for (let i = 0; i < noiseBuffer.length; i++) output[i] = Math.random() * 2 - 1;
+        const whiteNoise = audioCtx.createBufferSource();
+        whiteNoise.buffer = noiseBuffer;
+
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 1000;
+
+        const noiseGain = audioCtx.createGain();
+        noiseGain.gain.setValueAtTime(0.6, now);
+        noiseGain.gain.exponentialRampToValueAtTime(0.01, now + 0.18);
+
+        whiteNoise.connect(filter);
+        filter.connect(noiseGain);
+        noiseGain.connect(audioCtx.destination);
+
+        const osc = audioCtx.createOscillator();
+        const oscGain = audioCtx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(180, now);
+        osc.frequency.exponentialRampToValueAtTime(80, now + 0.1);
+        oscGain.gain.setValueAtTime(0.5, now);
+        oscGain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+
+        osc.connect(oscGain);
+        oscGain.connect(audioCtx.destination);
+
+        whiteNoise.start(now);
+        osc.start(now);
+        whiteNoise.stop(now + 0.18);
+        osc.stop(now + 0.1);
+      }
+      else if (type === 'hihat') {
+        const bufferSize = audioCtx.sampleRate * 0.05;
+        const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+        const noise = audioCtx.createBufferSource();
+        noise.buffer = buffer;
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'highpass';
+        filter.frequency.value = 7000;
+        const gain = audioCtx.createGain();
+        gain.gain.setValueAtTime(0.3, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
+        noise.connect(filter);
+        filter.connect(gain);
+        gain.connect(audioCtx.destination);
+        noise.start(now);
+      }
+      else if (type === 'clap') {
+        const bufferSize = audioCtx.sampleRate * 0.25;
+        const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < bufferSize; i++) data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (audioCtx.sampleRate * 0.04));
+        const noise = audioCtx.createBufferSource();
+        noise.buffer = buffer;
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'bandpass';
+        filter.frequency.value = 1200;
+        filter.Q.value = 1.2;
+        const gain = audioCtx.createGain();
+        gain.gain.setValueAtTime(0.8, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.22);
+        noise.connect(filter);
+        filter.connect(gain);
+        gain.connect(audioCtx.destination);
+        noise.start(now);
+      }
+      else if (type === 'bass') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(60, now);
+        osc.frequency.exponentialRampToValueAtTime(30, now + 0.6);
+        gain.gain.setValueAtTime(0.8, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.6);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.6);
+      }
+      else if (type === 'perc') {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.frequency.setValueAtTime(600, now);
+        osc.frequency.exponentialRampToValueAtTime(200, now + 0.08);
+        gain.gain.setValueAtTime(0.6, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.08);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.08);
+      }
+    }
+
+    function playStyleBeat(style) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      let step = 0;
+      const totalSteps = 8;
+      const intervalTime = style === 'trap' ? 120 : (style === 'drill' ? 140 : 180);
+
+      const demoInterval = setInterval(() => {
+        if (step >= totalSteps) { clearInterval(demoInterval); return; }
+        if (style === 'boombap') {
+          if (step === 0 || step === 4) playSound('kick');
+          if (step === 2 || step === 6) playSound('snare');
+          if (step % 2 === 0) playSound('hihat');
+        } else if (style === 'trap') {
+          if (step === 0 || step === 3 || step === 6) playSound('kick');
+          if (step === 4) playSound('snare');
+          playSound('hihat');
+          if (step === 0 || step === 4) playSound('bass');
+        } else if (style === 'drill') {
+          if (step === 0 || step === 5) playSound('kick');
+          if (step === 2 || step === 6) playSound('snare');
+          if (step % 2 === 0) playSound('hihat');
+          if (step === 3 || step === 7) playSound('bass');
+        }
+        step++;
+      }, intervalTime);
+    }
+
+    const pads = document.querySelectorAll('.pad-btn');
+    pads.forEach(pad => {
+      pad.addEventListener('click', () => {
+        playSound(pad.getAttribute('data-sound'));
+        pad.classList.add('active');
+        setTimeout(() => pad.classList.remove('active'), 100);
+      });
+    });
+
+    const keyMap = { 'q': 'kick', 'w': 'snare', 'e': 'hihat', 'a': 'clap', 's': 'bass', 'd': 'perc' };
+    window.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();
+      if (keyMap[key]) {
+        playSound(keyMap[key]);
+        const padBtn = document.querySelector(`.pad-btn[data-sound="${keyMap[key]}"]`);
+        if(padBtn) { padBtn.classList.add('active'); setTimeout(() => padBtn.classList.remove('active'), 100); }
+      }
+    });
+
+    const sounds = ['kick', 'snare', 'hihat', 'clap'];
+    const soundNames = { kick: 'BUMBO', snare: 'CAIXA', hihat: 'CHIMBAL', clap: 'PALMA' };
+    const seqGrid = document.getElementById('sequencerGrid');
+    const seqMatrix = {};
+
+    sounds.forEach(sound => {
+      seqMatrix[sound] = Array(8).fill(false);
+      const row = document.createElement('div');
+      row.className = 'seq-row';
+      
+      const label = document.createElement('div');
+      label.className = 'seq-label';
+      label.innerText = soundNames[sound];
+      row.appendChild(label);
+
+      const stepsDiv = document.createElement('div');
+      stepsDiv.className = 'seq-steps';
+
+      for(let i=0; i<8; i++) {
+        const stepBtn = document.createElement('button');
+        stepBtn.className = 'step-btn';
+        stepBtn.addEventListener('click', () => {
+          seqMatrix[sound][i] = !seqMatrix[sound][i];
+          stepBtn.classList.toggle('active');
+        });
+        stepsDiv.appendChild(stepBtn);
+      }
+      row.appendChild(stepsDiv);
+      seqGrid.appendChild(row);
+    });
+
+    let isPlaying = false;
+    let currentStep = 0;
+    let seqInterval = null;
+    const bpmRange = document.getElementById('bpmRange');
+    const bpmVal = document.getElementById('bpmVal');
+
+    bpmRange.addEventListener('input', (e) => {
+      bpmVal.innerText = e.target.value;
+      if (isPlaying) { stopSequencer(); startSequencer(); }
+    });
+
+    document.getElementById('playSeqBtn').addEventListener('click', function() {
+      if (isPlaying) { stopSequencer(); this.innerText = '▶ Iniciar Sequenciador'; }
+      else { startSequencer(); this.innerText = '⏹ Parar Sequenciador'; }
+    });
+
+    document.getElementById('clearSeqBtn').addEventListener('click', () => {
+      sounds.forEach(sound => { seqMatrix[sound] = Array(8).fill(false); });
+      document.querySelectorAll('.step-btn').forEach(btn => btn.classList.remove('active'));
+    });
+
+    function startSequencer() {
+      isPlaying = true;
+      const bpm = parseInt(bpmRange.value);
+      const stepTime = (60 / bpm / 2) * 1000;
+
+      seqInterval = setInterval(() => {
+        document.querySelectorAll('.step-btn').forEach((btn, idx) => {
+          if (idx % 8 === currentStep) btn.classList.add('playing');
+          else btn.classList.remove('playing');
+        });
+
+        sounds.forEach(sound => {
+          if (seqMatrix[sound][currentStep]) playSound(sound);
+        });
+
+        currentStep = (currentStep + 1) % 8;
+      }, stepTime);
+    }
+
+    function stopSequencer() {
+      isPlaying = false;
+      clearInterval(seqInterval);
+      document.querySelectorAll('.step-btn').forEach(btn => btn.classList.remove('playing'));
+      currentStep = 0;
+    }
+  </script>
+</body>
+</html>
